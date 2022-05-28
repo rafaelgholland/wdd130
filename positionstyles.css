@@ -111,22 +111,22 @@
     
 }
 .red4 {
-  width: 50%; 
+  width: 65%; 
   height: 400px; 
   background-color: red;
   grid-column: 1;
-  margin-left: 50%;
+  margin-left: 35.5%;
   
 } 
 .green4 {
-  width: 50%; 
+  width: 65%; 
   height: 135px; 
   background-color: green;
   grid-column: 2;
   grid-row: 1; 
 } 
 .yellow4 {
-  width: 50%; 
+  width: 65%; 
   height: 135px; 
   background-color: gold;
   grid-column: 2; 
@@ -134,7 +134,7 @@
   
 } 
 .blue4 {
-  width: 50%; 
+  width: 65%; 
   height: 133.5px; 
   background-color: blue; 
   grid-column: 2;
