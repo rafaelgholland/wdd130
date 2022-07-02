@@ -116,6 +116,7 @@ footer a, footer h3 {
 }
 footer a:hover {
     color: #ff961f;
+    transition: 1s;
 }
 footer.social img {
     padding-top: 15px;
