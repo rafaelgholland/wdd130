@@ -2,10 +2,10 @@
 
 /*Conteúdo da Home Page*/
 #content {
+    min-width: 320px;
     max-width: 1600px;
-    margin-left:-8px;
-    margin-right: -8px;
-    margin-top: -8px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 0px 10px #ff971f9c
 }
 body {
     font-family: "Hind";
@@ -16,21 +16,21 @@ header {
     background-color: #1d6586;
     display: grid;
     grid-template-columns: 150px auto;
+    font-family: "Carter One";
 }
 nav {
     display: flex;
     justify-content: space-around;
-    font-family: 'Carter One';
 }
 nav a {
     text-align: center;
     color: #dcf3f9;
     text-decoration: none;
-    padding: 60px;
+    padding: 35px;
 }
 nav a:hover {
-    background-color: #1d6586;
     color: #ff961f;
+    transition: 1s;
 }
 #logo_link {
     padding-top: 5px;
@@ -38,20 +38,20 @@ nav a:hover {
     align-self: center;
 }
 .logo {
-    width: 120px;
-    padding-left: 30px;
+    width: 80px;
 }
 
 /*Aqui temos o Hero Box*/
 
 .hero {
     display: grid;
-    grid-template-columns: repeat(5, 20%);
+    grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(5, 20%);
     font-family: "Carter One";
 }
 #hero_img {
     width: 100%;
+    margin-bottom: 100px;
 }
 #hero_box {
     grid-column: 1/6;
@@ -59,15 +59,15 @@ nav a:hover {
     z-index: -1;
 }
 .hero_msg {
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: center;
-    grid-column: 3/4;
+    grid-column: 2/4;
     grid-row: 1/2;
     color: #dcf3f9;
-    
+    text-shadow: 0 0 0.5em #ff961f
 }
 .home_title {
-    border: 5px 5px 5px 5px #ff961f;
+    font-size: 2em;
 }
 
 /*Aqui temos o Main*/
@@ -76,6 +76,8 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(10,10%);
     grid-template-rows: repeat(5,20%);
+    background-color: #dcf3f9;
+    margin-top: -110px;
 }
 .main_msg h2 {
     grid-column: 1/11;
@@ -83,13 +85,15 @@ nav a:hover {
     text-align: center;
     color: #1d6586;
     font-family: "Carter One";
+    
 }
 .main_msg p {
     grid-column: 2/10;
     grid-row: 2/5;
     color: #1d6586;
     font-family: "Hind";
-    margin-top: 20px;
+    margin-top: 45px;
+    text-align: left;
 }
 #hero_img2 {
     width: 100%;
@@ -100,11 +104,10 @@ nav a:hover {
 footer {
     background-color: #1d6586;
     padding: 25px 50px;
-    margin-top: -10px;
+    margin-top: -9px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: -20px;
     font-family: "Carter One";
 }
 footer a, footer h3 {
@@ -120,4 +123,18 @@ footer.social img {
 .logo_2 {
     width: 120px;
     margin-right: -25px;
+}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
 }
