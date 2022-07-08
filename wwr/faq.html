@@ -22,11 +22,24 @@
             </nav>
         </header>
     <main class="faq">
+        <!-- Trigger the Modal -->
+        <img id="myImg" src="images/rafting59_600.jpg" alt="Group of People Waving After Rafting" style="width:100%;max-width:500px">
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
         <div id="main">
         <h1 id="main-title"> <img id="logo2" src="images/3721746.png" alt="search icon">Frequently Asked Questions</h1>
         <p id="answer">This is a space where we organize some of the most asked questions about our company, our packages and the white rafting experience in general. Because of this, we facilitate your access to information that is more common and may be relevant to your next vacation planning.</p>
         </div>
-        <img id="logo" src="images/rafting59_600.jpg" alt="Dry Oar Logo">
         <section id="questions">
             <h3> <img id="logo3" src="images/1230203.png" alt="comment ballon"> Is this a good trip for kids? What are the age ranges you allow?</h3>
             <p id="answer1">Absolutely this is a good trip for children of all ages. We have found however that children over the age of 8 seem to enjoy it more overall (and parents especially enjoy it more if their children are all over 8). A common concern we get from parents is that their children will be bored stuck on a boat for hours at a time. Surprisingly we deal with very few bored children of any age. The areas we are rafting through are some of the most beautiful in the world, and you never know what you might see around any corner. Not to mention the rapids which keep things very interesting. Each boat also comes equipped with a guide. It has been proven that river guides are unable to go for very long at all without telling stories...some of which are even true!</p>
@@ -59,5 +72,24 @@
             </div>
         </footer>
     </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+         modal.style.display = "block";
+         modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+        }
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+         modal.style.display = "none";
+        }
+    </script>
 </body>
 </html>
