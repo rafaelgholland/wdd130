@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Hind:wght@300&display=swap');
+
+#content {
+    min-width: 320px;
+    max-width: 1600px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 0px 10px #1d6586;
+}
+body {
+    font-family: "Hind";
+}
+/** Header **/
+header {
+    background-color: #1d6586;
+    display: grid;
+    grid-template-columns: 150px auto;
+    font-family: "Carter One";
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    text-align: center;
+    color: #dcf3f9;
+    text-decoration: none;
+    padding: 35px;
+}
+nav a:hover {
+    color: #ff961f;
+    transition: 1s;
+}
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.logo {
+    width: 80px;
+}
+/** Banner **/
+.main_about {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 20%);
+    font-family: "Carter One";
+}
+.img-about {
+    width: 100%;
+}
+.about-img {
+    grid-column: 1/6;
+    grid-row: 1/6;
+    z-index: -1;
+}
+.about_head {
+    margin-top: 55px;
+    text-align: center;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    color: #dcf3f9;
+    text-shadow: 0 0 0.5em #1d6586;
+    text-decoration: underline #ff961f;
+}
+#about_heading {
+    font-size: 2em;
+}
+
+/** Main **/
+.a_msgs {
+    display: grid;
+    grid-template-columns: repeat(10,10%);
+    background-color: #dcf3f9;
+    margin-top: -7px;
+}
+.about_msg {
+    grid-column: 2/10;
+    text-align: justify;
+}
+.about_msg h2 {
+    font-family: "Carter One";
+    text-align: center;
+    color: #1d6586;
+    text-decoration: underline #ff961f;
+}
+.about_msg p {
+    color: #1d6586;
+}
+/** Footer **/
+footer {
+    background-color: #1d6586;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Carter One";
+}
+footer a, footer h3 {
+    color: #dcf3f9;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #ff961f;
+    transition: 1s;
+}
+footer.social img {
+    padding-top: 15px;
+}
+.logo_2 {
+    width: 100px;
+    margin-right: -25px;
+}
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+}
