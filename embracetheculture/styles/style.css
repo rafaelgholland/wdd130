@@ -59,7 +59,7 @@ nav a:hover {
     z-index: -1;
 }
 .hero_msg {
-    margin-top: 100px;
+    margin-top: 55px;
     text-align: center;
     grid-column: 2/4;
     grid-row: 1/2;
