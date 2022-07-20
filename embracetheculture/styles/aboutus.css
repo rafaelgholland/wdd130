@@ -59,8 +59,7 @@ nav a:hover {
     grid-column: 2/4;
     grid-row: 1/2;
     color: #dcf3f9;
-    text-shadow: 0 0 0.5em #1d6586;
-    text-decoration: underline #ff961f;
+    text-shadow: 0 0 0.5em #ff961f;
 }
 #about_heading {
     font-size: 2em;
